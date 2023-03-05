@@ -1,4 +1,6 @@
 /* Font settings*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
 @font-face {
   font-family: 'Verdana';
   src: url('../font/Verdana-BoldItalic.woff') format('woff'),
@@ -32,13 +34,18 @@
 }
 
 body {
+  padding: 0;
+  margin: 0;
   font-family: 'Smythe', cursive, sans-serif;
   display: flex;
   justify-content: center;
+  background-color: #f5f5f5;
 }
 
 .main {
   width: 600px;
+  height: 1161px;
+  background-color: #ffffff;
 }
 
 /* Header */
@@ -53,8 +60,10 @@ body {
 }
 
 .title {
+  margin: 0;
   padding-top: 46px;
-  padding-left: 46;
+  padding-left: 46px;
+  padding-bottom: 26px;
   font-weight: 400;
   font-size: 40px;
   line-height: 24px;
@@ -67,4 +76,75 @@ body {
   line-height: 14px;
 }
 
+/* Menu */
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu__item {
+  display: flex;
+  width: 508px;
+  height: 140px;
+  border-bottom: 1px solid #d2d2d2;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu__item-emoji {
+  font-size: 60px;
+  margin-right: 31px;
+}
+
+.menu__item-description {
+  width: 358px;
+  height: 70px;
+}
+
+.menu__item-name {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 26px;
+}
+
+.menu__item-ingredients {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #8b8b8b;
+}
+
+.menu__item-price {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.menu__item-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #8b8b8b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu__item-plus {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  color: #3c3c3c;
+  font-weight: 200;
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
 /* Order */
+
