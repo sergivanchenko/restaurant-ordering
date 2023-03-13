@@ -93,24 +93,24 @@ body {
   align-items: center;
 }
 
-.menu__item-emoji {
+.menu__emoji {
   font-size: 60px;
   margin-right: 31px;
 }
 
-.menu__item-description {
+.menu__description {
   width: 358px;
   height: 70px;
 }
 
-.menu__item-name {
+.menu__name {
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
   line-height: 26px;
 }
 
-.menu__item-ingredients {
+.menu__ingredients {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -118,14 +118,14 @@ body {
   color: #8b8b8b;
 }
 
-.menu__item-price {
+.menu__price {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 26px;
 }
 
-.menu__item-circle {
+.menu__circle {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -135,7 +135,7 @@ body {
   align-items: center;
 }
 
-.menu__item-plus {
+.menu__plus {
   font-family: 'Inter', sans-serif;
   font-size: 32px;
   color: #3c3c3c;
@@ -148,3 +148,106 @@ body {
 
 /* Order */
 
+.order {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.order__title {
+  font-family: 'Smythe';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 17px;
+  margin: 45px;
+}
+
+.order__item {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.order__desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.order__name {
+  font-family: 'Smythe';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 17px;
+  color: #000000;
+}
+
+.order__remove {
+  background-color: white;
+  border: none;
+  font-family: 'Verdana';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  color: #bbbbbb;
+  cursor: pointer;
+}
+
+.order__dollar,
+.order__price,
+.total__price {
+  font-family: 'Smythe';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+/* Order result */
+.order__result {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  border-top: 2px solid #393333;
+}
+
+.order__total {
+  font-family: 'Smythe';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 17px;
+  padding-top: 18px;
+}
+
+.order__result {
+  padding-bottom: 50px;
+}
+
+.order__complete {
+  width: 508px;
+  background: #16db99;
+  border: none;
+  padding: 20px;
+  font-family: 'Verdana';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.order__dollar {
+  font-family: 'Smythe';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
