@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
-    <main class="main">
+    <main class="main" id="main">
       <header class="header">
         <h1 class="title">Jimmy’s Diner</h1>
         <h2 class="description">The best burgers and pizzas in town.</h2>
@@ -29,6 +29,35 @@
       </section>
       <section id="order" class="order">
         <!-- Generate order with JavaScript -->
+      </section>
+      <section id="card" class="card">
+        <form class="card__container">
+          <h2 class="card__details">Enter card details</h2>
+          <input
+            type="text"
+            id="name"
+            class="card__input"
+            placeholder="Enter your name"
+            required
+          />
+          <input
+            type="text"
+            id="email"
+            class="card__input"
+            placeholder="Enter card number"
+            required
+          />
+          <input
+            type="text"
+            id="cvv"
+            class="card__input"
+            placeholder="Enter CVV"
+            required
+          />
+          <button type="submit" id="card-btn" class="card__btn" data-pay="card">
+            Pay
+          </button>
+        </form>
       </section>
     </main>
     <script src="index.js" type="module"></script>

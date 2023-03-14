@@ -12,6 +12,11 @@ document.addEventListener('click', function (e) {
       e.target.parentElement.parentElement.id,
       e.target.dataset.remove
     );
+  } else if (e.target.dataset.complete) {
+    completeOrder();
+  } else if (e.target.dataset.pay) {
+    e.preventDefault();
+    payCard();
   }
 });
 
@@ -61,7 +66,7 @@ function addToCart(foodName) {
               menuItem.price
             }</span></p>
           </div>
-          <button class="order__complete">Complete Order</button>`;
+          <button class="order__complete" data-complete="card">Complete Order</button>`;
       }
     });
 
@@ -126,3 +131,24 @@ function subtractTotalPrice(foodName) {
 
   totalPrice.innerHTML = `${currentPrice}`;
 }
+
+function completeOrder() {
+  const card = document.getElementById('card');
+  card.style.display = 'block';
+}
+
+function payCard() {
+  const userInputName = document.getElementById('name');
+  const main = document.getElementById('main');
+  
+
+  main.innerHTML += `
+    <section class="message__box">
+      <h2 class="message__text">Thanks, ${userInputName.value} Your order is on its way!</h2>
+    </section>`;
+
+  const card = document.getElementById('card');
+  card.style.display = 'none';
+}
+
+

@@ -46,6 +46,9 @@ body {
   width: 600px;
   height: 1161px;
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Header */
@@ -250,4 +253,84 @@ body {
   font-size: 20px;
   line-height: 24px;
   color: #000000;
+}
+
+/* Card */
+.card {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.card__container {
+  width: 524px;
+  height: 505px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 3.88991px;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+}
+
+.card__details {
+  font-family: 'Verdana';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  color: #000000;
+  margin: 45px 0px;
+}
+
+.card__input {
+  width: 475px;
+  height: 71px;
+  resize: none;
+  border: 1px solid #757575;
+  border-radius: 4px;
+  margin-bottom: 23px;
+  font-family: 'Verdana';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 31px;
+  padding: 20px;
+}
+
+.card__btn {
+  width: 475px;
+  height: 71px;
+  background-color: #16db99;
+  border-radius: 3.88991px;
+  font-family: 'Verdana';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Message */
+.message__box {
+  width: 504px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 45px;
+  background: #ecfdf5;
+  border-radius: 3px;
+}
+
+.message__text {
+  font-family: 'Smythe';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 17px;
+  color: #065f46;
 }
