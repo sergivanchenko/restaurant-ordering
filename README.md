@@ -7,7 +7,7 @@ This project is developed using HTML, CSS, and JavaScript. It allows users to br
 To get started with this project, clone this repository to your local machine.
 
 ```bash
-git clone https://sergivanchenko.github.io/restaurant-ordering
+git clone https://github.com/sergivanchenko/restaurant-ordering.git
 ```
 
 ## Screenshot
